@@ -1,0 +1,7 @@
+
+#puttygen
+
+icacls .\mykeypair.pem /inheritance:r
+icacls .\mykeypair.pem /grant:r "%myname%":"(R)"
+ssh-keygen -y -f mykeypair.pem > MyKP.pub
+ec2-3-82-144-111.compute-1.amazonaws.com
